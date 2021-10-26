@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'SFProText-Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../Assets/Fonts/SF-Pro-Text-Bold.otf');
+}
+@font-face {
+    font-family: 'SFProText-Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../Assets/Fonts/SF-Pro-Text-Medium.otf');
+}
+@font-face {
+    font-family: 'SFProText-Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../Assets/Fonts/SF-Pro-Text-Regular.otf');
+}
+@font-face {
+    font-family: 'SFProText-Light';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../Assets/Fonts/SF-Pro-Text-Light.otf');
+}
+
+$backgroundColor: #FFFFFF;
+$textColor: #2F3132;
+$textLight: #616161;
+$textLighter: #636363;
+$textLightest: #AEAEAE;
+$arrowColor: #717171;
+$borderColor: #DEDEDE;
+$linkColor: #179CE4;
+$doneBackground: lighten(#8BC241, 38%);
+$doneColor: #8BC241;
+$chkColor: #E2F0CF;

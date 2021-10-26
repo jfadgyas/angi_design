@@ -1,0 +1,103 @@
+@import './variables';
+
+.todo{
+    margin: 2.6em 0 0.8em 0;
+    &__title{
+        padding: 3.2em 0 0.15em 1em;
+        color: $textColor;
+        font-family: 'SFProText-Bold';
+        font-size: 16px;
+        font-weight: normal;
+        letter-spacing: -0.38px;
+        text-align: left;
+    }
+    &__new-wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 0.85em;
+    }
+    &__new-item{
+        width: 758px;
+        height: 45px;
+        padding-left: 1em;
+        border-radius: 4px;
+        border: 1px solid $borderColor;
+        color: $textColor;
+        outline: none;
+        font-family: 'SFProText-Regular';
+        font-size: 14.4px;
+        letter-spacing: -0.34px;
+        text-align: left;
+        &::placeholder{
+            color: $textLightest;
+        }
+    }
+    &__list{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        border-radius: 4px;
+        border: 1px solid $borderColor;
+    }
+    &__list-item{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+        padding: 0 0.8em 0 1em;
+        border-bottom: 1px solid $borderColor;
+        color: $textColor;
+        font-family: 'SFProText-Regular';
+        font-size: 16px;
+        letter-spacing: -0.38px;
+        text-align: left;
+        &:last-child{
+            border: none;
+        }
+        &--done{
+            background: $doneBackground;
+            color: $doneColor;
+        }
+    }
+    &__chkbox{
+        position: relative;
+        width: 24px;
+        height: 24px;
+        border: 1px solid $borderColor;
+        border-radius: 50%;
+        background: transparent;
+        outline: none;
+        appearance: none;
+        &:checked{
+            background: $doneColor;
+            border-color: $doneColor;
+            &::after{
+                content: '\2714';
+                position: absolute;
+                top: 2px;
+                left: 5px;
+                font-size: 14px;
+                color: $chkColor;
+            }
+        }
+    }
+    &__btn{
+        margin: 0;
+        padding: 0;
+        width: 136px;
+        height: 47px;
+        border-radius: 4px;
+        border: none;
+        outline: none;
+        background: $linkColor;
+        color: $backgroundColor;
+        font-family: 'SFProText-Bold';
+        font-size: 14.4px;
+        letter-spacing: -0.34px;
+        text-align: center;
+        &:disabled{
+            background: $borderColor;
+        }
+    }
+}

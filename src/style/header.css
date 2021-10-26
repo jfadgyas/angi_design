@@ -1,0 +1,64 @@
+@font-face {
+  font-family: 'SFProText-Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: url("../Assets/Fonts/SF-Pro-Text-Bold.otf");
+}
+
+@font-face {
+  font-family: 'SFProText-Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: url("../Assets/Fonts/SF-Pro-Text-Medium.otf");
+}
+
+@font-face {
+  font-family: 'SFProText-Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: url("../Assets/Fonts/SF-Pro-Text-Regular.otf");
+}
+
+@font-face {
+  font-family: 'SFProText-Light';
+  font-style: normal;
+  font-weight: normal;
+  src: url("../Assets/Fonts/SF-Pro-Text-Light.otf");
+}
+
+body {
+  margin: 4em 124px 4em 142px;
+}
+
+.header {
+  width: 535px;
+}
+
+.header__company {
+  color: #179CE4;
+  font-family: 'SFProText-Bold';
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.6px;
+  text-transform: lowercase;
+}
+
+.header__title {
+  margin-top: 1.34em;
+  margin-bottom: 0;
+  color: #2F3132;
+  font-family: 'SFProText-Bold';
+  font-size: 48px;
+  letter-spacing: -1.13px;
+  text-align: left;
+}
+
+.header__desc {
+  margin: 0.64em 0;
+  color: #2F3132;
+  font-family: 'SFProText-Light';
+  font-size: 25px;
+  letter-spacing: -0.59px;
+  text-align: left;
+}
+/*# sourceMappingURL=header.css.map */

@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons+Outlined');
+@import './variables';
+
+.footer{
+    &__title{
+        padding: 3.2em 0 0.15em 1em;
+        color: $textColor;
+        font-family: 'SFProText-Bold';
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 19px;
+        letter-spacing: -0.38px;
+        text-align: left;
+    }
+    &__wrapper{
+        margin-top: 0.8em;
+        display: flex;
+        gap: 1.5em;    
+    }
+    &__group{
+        flex-basis: 31.5%;
+        flex-grow: 0;
+        flex-shrink: 0;
+        &:first-of-type{
+            border: 1px solid $borderColor;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+    }
+    &__pic{
+        width: 100%;
+    }
+    &__subtitle{
+        margin: 0;
+        padding-top: 1.65rem;
+        padding-left: 1.5rem;
+        color: $textColor;
+        font-family: 'SFProText-Medium';
+        font-size: 21px;
+        font-weight: normal;
+        letter-spacing: -0.49px;
+        text-align: left;
+    }
+    &__desc{
+        margin-top: 0.6rem;
+        padding: 0 1.9rem 0 1.5rem;
+        color: $textLighter;
+        font-family: 'SFProText-Regular';
+        font-size: 14.4px;
+        letter-spacing: -0.34px;
+        line-height: 23px;
+    }
+    &__label{
+        height: 22px;
+        margin: 0;
+        color: $textColor;
+        font-family: 'SFProText-Medium';
+        font-size: 14.4px;
+        font-weight: normal;
+        letter-spacing: -0.34px;
+        line-height: 17px;
+        text-align: left;
+    }
+    &__list{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        &--sub{
+            position: relative;
+            height: 1px;
+            padding-left: 1.5em;
+            border-bottom: 1px solid $borderColor;
+            transform: translateY(-2em);
+            z-index: -1;
+            transition: 300ms, z-index 1ms;
+            &.active{
+                transform: translateY(0);
+                height: 125px;
+                z-index: 1;
+                .footer__list-item--sub{
+                    height: 30px;
+                }
+            }
+        }
+    }
+    &__list-item{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 40px;
+        background: $backgroundColor;
+        color: $linkColor;
+        font-family: 'SFProText-Regular';
+        font-size: 14.4px;
+        border-bottom: 1px solid $borderColor;
+        letter-spacing: -0.34px;
+        line-height: 17px;
+        text-align: left;
+        &:last-child{
+            border: none;
+            margin-bottom: 22px;
+        }
+        &--sub{
+            position: relative;
+            height: 1px;
+            color: $textLight;
+            font-size: 12px;
+            letter-spacing: -0.28px;
+            line-height: 14px;
+            text-align: left;
+            z-index: -1;
+            transition: 300ms;
+            &:last-child{
+                margin-bottom: 0px;
+                border: none;
+            }
+        }
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    &__arrow{
+        display: inline-flex;
+        color: $arrowColor;
+        font-family: 'Material Icons Outlined';
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1;
+        text-align: center;
+        text-transform: none;
+        letter-spacing: normal;
+        word-wrap: normal;
+        white-space: nowrap;
+        direction: ltr;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+        -moz-osx-font-smoothing: grayscale;
+        font-feature-settings: 'liga';
+        transition: 300ms;
+        &.active{
+            transform: rotateZ(180deg);
+        }
+        &--open::after{
+            content: '\e5cf';
+            font-size: 26px;
+        }
+        &--more::after{
+            content: '\f1df';
+            padding-left: 0.5em;
+            font-size: 16px;
+        }
+    }
+    &__button{
+        display: flex;
+        align-items: flex-end;
+        padding-left: 1.5rem;
+        background: $backgroundColor;
+        color: $linkColor;
+        font-family: 'SFProText-Regular';
+        font-size: 14.4px;
+        letter-spacing: -0.34px;
+        text-align: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+}
