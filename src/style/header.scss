@@ -1,11 +1,10 @@
 @import './variables';
 
-body{
-    margin: 4em 124px 4em 142px;
+*{
+    transition: 300ms;
 }
 
-.header{
-    width: 535px;
+.header{    
     &__company{
         color: $linkColor;
         font-family: 'SFProText-Bold';
@@ -19,16 +18,54 @@ body{
         margin-bottom: 0;
         color: $textColor;
         font-family: 'SFProText-Bold';
-        font-size: 48px;
         letter-spacing: -1.13px;
         text-align: left;
+        
     }
     &__desc{
         margin: 0.64em 0;
         color: $textColor;
         font-family: 'SFProText-Light';
-        font-size: 25px;
         letter-spacing: -0.59px;
         text-align: left;
+    }
+}
+
+@media (min-width: 375px){
+    body{
+        margin: 4em 1.7em;
+    }
+    .header{
+        width: 100%;
+        &__title{
+            font-size: 2em;
+        }
+        &__desc{
+            font-size: 1em;
+        }
+    }
+}
+
+@media (min-width: 810px){
+    body{
+        margin: 4em 4em;
+    }
+    .header{
+        width: 75%;
+        &__title{
+            font-size: 3em;
+        }
+        &__desc{
+            font-size: 1.5em;
+        }
+    }
+}
+
+@media (min-width: 1024px){
+    body{
+        margin: 4em 7.8em 4em 9em;
+    }
+    .header{
+        width: 55%;
     }
 }

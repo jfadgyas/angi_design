@@ -26,12 +26,9 @@
   src: url("../Assets/Fonts/SF-Pro-Text-Light.otf");
 }
 
-body {
-  margin: 4em 124px 4em 142px;
-}
-
-.header {
-  width: 535px;
+* {
+  -webkit-transition: 300ms;
+  transition: 300ms;
 }
 
 .header__company {
@@ -48,7 +45,6 @@ body {
   margin-bottom: 0;
   color: #2F3132;
   font-family: 'SFProText-Bold';
-  font-size: 48px;
   letter-spacing: -1.13px;
   text-align: left;
 }
@@ -57,8 +53,46 @@ body {
   margin: 0.64em 0;
   color: #2F3132;
   font-family: 'SFProText-Light';
-  font-size: 25px;
   letter-spacing: -0.59px;
   text-align: left;
+}
+
+@media (min-width: 375px) {
+  body {
+    margin: 4em 1.7em;
+  }
+  .header {
+    width: 100%;
+  }
+  .header__title {
+    font-size: 2em;
+  }
+  .header__desc {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 810px) {
+  body {
+    margin: 4em 4em;
+  }
+  .header {
+    width: 75%;
+  }
+  .header__title {
+    font-size: 3em;
+  }
+  .header__desc {
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    margin: 4em 7.8em 4em 9em;
+  }
+  .header {
+    width: 55%;
+  }
 }
 /*# sourceMappingURL=header.css.map */

@@ -4,7 +4,7 @@ const TodoList = props => {
 
     const todoList = props.todos.map((item, index) => 
         <li className={!item.isDone ? 'todo__list-item' : 'todo__list-item todo__list-item--done'}
-            key={index}>{item.todo}
+            key={index}><span className='todo__todo'>{item.todo}</span>
             <input
                 className='todo__chkbox'
                 id={index}
